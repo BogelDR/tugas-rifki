@@ -1,0 +1,22 @@
+body {font-family: 'Open Sans', sans-serif;}
+
+.padding-20		{padding:20px 0px;}
+.padding-40		{padding:40px 0px;}
+.padding-60		{padding:60px 0px;}
+.padding-80		{padding:80px 0px;}
+.padding-100	{padding:160px 0px;}
+.padding-200	{padding:200px 0px;}
+
+.margin-10		{margin-top: 10px; margin-bottom: 10px}
+.margin-20		{margin-top: 20px; margin-bottom: 20px}
+.margin-30		{margin-top: 30px; margin-bottom: 30px}
+
+.align-center	{text-align: center;}
+.align-left		{text-align: left}
+.align-right	{text-align: right;}
+
+.btn-outline-white {
+	border:1px solid white;
+	background-color: transparent;
+	color: white;
+}

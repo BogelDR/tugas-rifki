@@ -1,0 +1,14 @@
+#hero {
+	background: url(../images/bg-hero.jpg) no-repeat center;
+	background-size: cover;
+	color: white
+}
+
+#hero h1 {
+	text-transform: capitalize;
+	font-weight: 700
+}
+
+#hero p {
+	font-weight: 400
+}
