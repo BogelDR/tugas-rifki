@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="assets/css/app.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body ng-app="tugas">
+<body>
 <header class="nav navbar-default">
 	<div class="container">
 	    <div class="navbar-header">
@@ -46,7 +46,7 @@
 	</div>
 </div>
 
-<div id="team" ng-controller="teamController">
+<div id="team" ng-app="tugas" ng-controller="teamController">
 	<div class="container padding-60">
 		<div class="align-center">
 			<h2>proudly crafted by</h2>
@@ -55,7 +55,7 @@
 
 		<div class="row team-start">
 			<div class="col-sm-2 team-post align-center" ng-repeat="data in datas">
-				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/11951980_10206105623298674_8385842866435618109_n.jpg?oh=8f1959fe558552940096f6970af4097d&oe=56B49600&__gda__=1454671896_23ba6b82ed1a84b62df347f82718f0a4" alt="" class="img-responsive img-circle">
+				<img class="img-responsive img-circle" src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11951093_10203298832870787_876912878567800118_n.jpg?oh=e3ebf4d993bba735cc5bcf3be386700a&oe=56BA8026">
 				<h5>{{ data.nama }}</h5>
 				<p>{{ data.npm }}</p>
 			</div>
