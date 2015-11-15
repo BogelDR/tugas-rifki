@@ -22,6 +22,7 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "font-awesome": "https://github.com/FortAwesome/Font-Awesome.git#~4.4.0",
-    "jquery.nicescroll": "https://github.com/inuyaksa/jquery.nicescroll.git#~3.6.0"
+    "jquery.nicescroll": "https://github.com/inuyaksa/jquery.nicescroll.git#~3.6.0",
+    "lightslider": "~1.1.5"
   }
 }

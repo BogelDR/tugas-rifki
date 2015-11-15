@@ -9,9 +9,13 @@ app.controller('teamController', function($scope, $http) {
 $(document).ready(function() {  
 	
 
-
+	$(this).SmoothScrollWheel({
+		defaultSpeed: 250
+	});
 	$("html").niceScroll();
-
+	$("#light-slider").lightSlider({
+		item: 6
+	});
 
 	
 });

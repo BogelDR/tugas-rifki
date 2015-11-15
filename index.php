@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="tugas">
 <head>
 	<meta charset="UTF-8">
-	<title>Hello</title>
+	<title>Berak Bebek</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/app.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Berak Bebek</a>
+	      <a class="navbar-brand" href="index.php">Berak Bebek</a>
 	    </div>
 
     
@@ -27,10 +27,9 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Daftar Sekolah <span class="caret"></span></a>
           <ul class="dropdown-menu">
           	<?php for($i=1; $i<14; $i++) { ?>
-            <li><a href="">SMAN <?php echo $i; ?></a></li>
+            <li><a href="sman<?php echo $i; ?>.php">SMAN <?php echo $i; ?></a></li>
             <?php } ?>
           </ul>
-	    <li><a href="">About</a></li>
 	    <li><a href="">Explore</a></li>
 		</li>
       </ul>
@@ -41,31 +40,36 @@
 		<div class="col-md-8 col-md-offset-2 hero-start padding-100 align-center">
 			<h1>explore everything about schools here</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sunt quas at soluta possimus dolorum delectus eaque, totam debitis neque necessitatibus, laudantium, harum. Enim dolorem voluptatem autem, error doloremque, nulla.</p>
-			<a href="" class="btn btn-outline-white" role="button">learn more</a>
+			<hr style="width:5%">
 		</div>
 	</div>
 </div>
 
-<div id="team" ng-app="tugas" ng-controller="teamController">
+<div id="team" ng-controller="teamController">
 	<div class="container padding-60">
 		<div class="align-center">
 			<h2>proudly crafted by</h2>
 			<hr style="width:5%">
 		</div>
 
-		<div class="row team-start">
-			<div class="col-sm-2 team-post align-center" ng-repeat="data in datas">
-				<img class="img-responsive img-circle" src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11951093_10203298832870787_876912878567800118_n.jpg?oh=e3ebf4d993bba735cc5bcf3be386700a&oe=56BA8026">
-				<h5>{{ data.nama }}</h5>
-				<p>{{ data.npm }}</p>
-			</div>
+		<div id="light-slider" class="owl-carousel">
+			<div class="team-post align-center" ng-repeat="data in datas">
+				<img class="img-responsive img-circle" ng-src="{{data.fb}}">
+				<h5>{{data.nama}}</h5>
+				<p>{{data.npm}}</p>
+			</div>		
 		</div>
 	</div>
 </div>
+
+
+
 </body>
 <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
 <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/vendor/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
+<script src="assets/vendor/SmoothScrollWheel/dist/jquery.SmoothScrollWheel.min.js"></script>
+<script src="assets/vendor/lightslider/dist/js/lightslider.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <script src="assets/js/app.js"></script>
 </html>

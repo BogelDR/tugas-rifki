@@ -2,11 +2,13 @@
 	"records": [
 		{
 			"nama"	: "Rifki Nugraha",
-			"npm"	: "4412975"
+			"npm"	: "4412975",
+			"fb"	: "https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11951093_10203298832870787_876912878567800118_n.jpg?oh=e3ebf4d993bba735cc5bcf3be386700a&oe=56BA8026"
 		},
 		{
 			"nama"	: "Sibangsat",
-			"npm"	: "123456"
+			"npm"	: "123456",
+			"fb"	: "https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11951093_10203298832870787_876912878567800118_n.jpg?oh=e3ebf4d993bba735cc5bcf3be386700a&oe=56BA8026"
 		}
 	]
 }
